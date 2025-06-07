@@ -1,0 +1,58 @@
+# depslib dependency file v1.0
+1749075956 source:c:\users\ezequ\onedrive\desktop\programacion 2\programacion 2\gol.cpp
+	<iostream>
+	<cstring>
+	"gol.h"
+
+1749075394 c:\users\ezequ\onedrive\desktop\programacion 2\programacion 2\gol.h
+
+1749075407 source:c:\users\ezequ\onedrive\desktop\programacion 2\programacion 2\clsfecha.cpp
+	"Clsfecha.h"
+	<iostream>
+
+1748904292 c:\users\ezequ\onedrive\desktop\programacion 2\programacion 2\clsfecha.h
+
+1749075394 source:c:\users\ezequ\onedrive\desktop\programacion 2\programacion 2\jugador.cpp
+	<iostream>
+	<cstring>
+	"jugador.h"
+
+1749075430 c:\users\ezequ\onedrive\desktop\programacion 2\programacion 2\jugador.h
+	"ClsFecha.h"
+
+1749151354 source:c:\users\jetly\documents\nueva carpeta\programacion2-main\programacion 2\clsfecha.cpp
+	"Clsfecha.h"
+	<iostream>
+
+1749151354 c:\users\jetly\documents\nueva carpeta\programacion2-main\programacion 2\clsfecha.h
+
+1749151354 source:c:\users\jetly\documents\nueva carpeta\programacion2-main\programacion 2\gol.cpp
+	<iostream>
+	<cstring>
+	"gol.h"
+
+1749151354 c:\users\jetly\documents\nueva carpeta\programacion2-main\programacion 2\gol.h
+
+1749151354 source:c:\users\jetly\documents\nueva carpeta\programacion2-main\programacion 2\jugador.cpp
+	<iostream>
+	<cstring>
+	"jugador.h"
+
+1749151354 c:\users\jetly\documents\nueva carpeta\programacion2-main\programacion 2\jugador.h
+	"ClsFecha.h"
+
+1749329371 source:c:\users\jetly\documents\nueva carpeta\programacion2-main\programacion 2\club.cpp
+	<iostream>
+	"Club.h"
+	<cstring>
+
+1749328681 c:\users\jetly\documents\nueva carpeta\programacion2-main\programacion 2\club.h
+	"ClsFecha.h"
+
+1749330244 source:c:\users\jetly\documents\nueva carpeta\programacion2-main\programacion 2\main.cpp
+	<iostream>
+	"jugador.h"
+	"club.h"
+	"gol.h"
+	"ClsFecha.h"
+
