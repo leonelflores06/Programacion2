@@ -56,3 +56,41 @@
 	"gol.h"
 	"ClsFecha.h"
 
+1749918972 source:c:\users\milla\documents\proyectofacultad\programacion2\programacion2-main-2.0\programacion 2\clsfecha.cpp
+	"Clsfecha.h"
+	<iostream>
+
+1749918972 c:\users\milla\documents\proyectofacultad\programacion2\programacion2-main-2.0\programacion 2\clsfecha.h
+
+1749918972 source:c:\users\milla\documents\proyectofacultad\programacion2\programacion2-main-2.0\programacion 2\club.cpp
+	<iostream>
+	"Club.h"
+	<cstring>
+
+1749918972 c:\users\milla\documents\proyectofacultad\programacion2\programacion2-main-2.0\programacion 2\club.h
+	"ClsFecha.h"
+
+1750281392 source:c:\users\milla\documents\proyectofacultad\programacion2\programacion2-main-2.0\programacion 2\gol.cpp
+	<iostream>
+	<cstring>
+	"gol.h"
+
+1750281392 c:\users\milla\documents\proyectofacultad\programacion2\programacion2-main-2.0\programacion 2\gol.h
+
+1749918972 source:c:\users\milla\documents\proyectofacultad\programacion2\programacion2-main-2.0\programacion 2\jugador.cpp
+	<iostream>
+	<cstring>
+	"jugador.h"
+
+1749918972 c:\users\milla\documents\proyectofacultad\programacion2\programacion2-main-2.0\programacion 2\jugador.h
+	"ClsFecha.h"
+
+1750281295 source:c:\users\milla\documents\proyectofacultad\programacion2\programacion2-main-2.0\programacion 2\main.cpp
+	<iostream>
+	"jugador.h"
+	"club.h"
+	"gol.h"
+	"ClsFecha.h"
+	<cstring>
+	<map>
+

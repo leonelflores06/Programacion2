@@ -26,13 +26,13 @@ void Gol::mostrar() const {
     cout << endl;
 }
 
-void guardarGol(const Gol& g) {
+void Gol::guardarGol()const {
     FILE* p = fopen("goles.dat", "ab");
     if (p == NULL) {
         cout << "No se pudo abrir el archivo goles.dat" << endl;
         return;
     }
-    fwrite(&g, sizeof(Gol), 1, p);
+    fwrite(this, sizeof(Gol), 1, p);
     fclose(p);
 }
 
@@ -49,6 +49,44 @@ void mostrarGoles() {
         cout << "------------------------" << endl;
     }
     fclose(p);
+}
+
+void contarTiposDeGol() {
+    FILE* p = fopen("goles.dat", "rb");
+    if (p == NULL) {
+        cout << "No se pudo abrir el archivo goles.dat" << endl;
+        return;
+    }
+
+    // Obtener cantidad total de registros
+    fseek(p, 0, SEEK_END);
+    long tamArchivo = ftell(p);
+    int cantRegistros = tamArchivo / sizeof(Gol);
+    rewind(p);
+
+    // Memoria dinámica
+    Gol* goles = new Gol[cantRegistros];
+    fread(goles, sizeof(Gol), cantRegistros, p);
+    fclose(p);
+
+    // Contadores
+    int golPenal = 0, golTiroLibre = 0, golJugada = 0;
+
+    for (int i = 0; i < cantRegistros; i++) {
+        switch (goles[i].getTipoGol()) {
+            case 1: golPenal++; break;
+            case 2: golTiroLibre++; break;
+            case 3: golJugada++; break;
+        }
+    }
+
+    // Mostrar resultados
+    cout << "Cantidad de goles por tipo:" << endl;
+    cout << "Penal: " << golPenal << endl;
+    cout << "Tiro libre: " << golTiroLibre << endl;
+    cout << "Jugada: " << golJugada << endl;
+
+    delete[] goles;
 }
 
 
